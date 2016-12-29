@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+
+    #chef{
+      width: 20px;
+    }
+    </style>
+
+  </head>
+  <body>
+    <canvas id="canvasRegn" width="1200" height="650" style="margin:100px;"></canvas>
+
+    <script src="main.js"></script>
+
+
+    <input type="file" accept="image/*"  onchange="showMyImage(this)" /><br/>
+
+    <img id="thumbnil" style="width:50px; margin-top:10px;"  src="" alt="image"/>
+
+    <p>
+      <a href="http://www.animatedimages.org/cat-pizza-596.htm">
+      <img src="http://www.animatedimages.org/data/media/596/animated-pizza-image-0039.gif" border="0" alt="animated-pizza-image-0039"/>
+      </a>
+    </p>
+
+    <div ng-repeat="player in player_array" >
+      <p>{{ player.name }}</p>
+    </div>
+
+</body>
+</html>

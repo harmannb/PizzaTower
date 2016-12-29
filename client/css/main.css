@@ -1,0 +1,48 @@
+#modal img {
+   position: fixed;
+
+        width: 100%;
+        height: 100%;
+}
+
+.container-fluid h3{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 35px;
+    color: white;
+
+}
+
+.container-fluid p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+
+.my-container img {
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 0.95;
+      }
+.my-container div {
+          position: relative;
+          z-index: 2;
+      }
+#welcomeModal{
+        font-weight: bold;
+        color: black;
+      }
+.app-modal-window .modal-dialog {
+        width: 95%;
+        height: 95%;
+}
+body{
+  background-color: #faebd7;
+}
+#dashboard{
+  font-size: 30px;
+  font-family: verdena;
+  color: white;
+  margin-top: 0;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "angular_file_pizza_tower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.6.1",
+    "body-parser": "^1.15.2",
+    "angular-ui-bootstrap": "^2.1.4",
+    "socket.io": "^1.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
