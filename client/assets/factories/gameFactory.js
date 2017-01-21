@@ -77,6 +77,9 @@ anguapp.factory('gameFactory',function(){
                   }
                 }
             })
+            socket.on('score_increased', function(chef){
+              factory.scoperef.display();
+            })
             document.addEventListener("keydown", flagsetter, false);
             document.addEventListener("keyup", flagsetter, false);
             function flagsetter(e){

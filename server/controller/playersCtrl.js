@@ -1,4 +1,8 @@
 var mongoose = require('mongoose');
+var path = require('path');
+var player_array_file = require(path.join(__dirname,'./../config/player_array.js'));
+
+
 var playerModel = mongoose.model('Players');
 function PlayerController(){
   this.newPlayer = function(req,res){
@@ -34,13 +38,9 @@ function PlayerController(){
   }
 
   this.display = function(req,res){
-    playerModel.find({},function(err,data){
-      if(err){ console.log(err);}
-      else{
-        res.json(data);
+        res.json(player_array_file.player_arr);
       }
-    })
-  }
-}
+    }
+
 
 module.exports = new PlayerController();

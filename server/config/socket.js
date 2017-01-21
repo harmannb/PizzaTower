@@ -1,6 +1,9 @@
+var path = require('path');
+var player_array_file = require(path.join(__dirname,'./../config/player_array.js'));
+
 module.exports = function(app, server){
 var io = require('socket.io').listen(server)
-var player_arr = [];
+var player_arr = player_array_file.player_arr;
 
 io.sockets.on('connection', function(socket){
 
